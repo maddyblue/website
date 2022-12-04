@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     
-    {# This is the base template for the site–other templates extend this one #}
+    <script>
+    if (window.location.protocol === "http:") {
+      window.location.protocol = "https:";
+    }
+    </script>
     
     <meta charset="utf-8" />
     <link rel="icon" href="https://cdn.glitch.global/08c0c16c-42ba-47bd-aa4b-fdab79602d49/favicon.ico?v=1669681272485" />
@@ -13,8 +17,6 @@
   </head>
   <body>
   <main>
-    
-    {# Page or post content will appear here #}
   
     {{ content | safe }}
 
