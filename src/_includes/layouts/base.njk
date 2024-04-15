@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <script>
     if (window.location.protocol === "http:") {
       window.location.protocol = "https:";
     }
     </script>
-    
     <meta charset="utf-8" />
     <link rel="icon" href="https://cdn.glitch.global/08c0c16c-42ba-47bd-aa4b-fdab79602d49/favicon.ico?v=1669681272485" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Matt Jibson" />
-    <link rel="stylesheet" type="text/css" href="/public/style.css" />
-    {% seo "" %}
+    <!--link rel="stylesheet" type="text/css" href="/public/base.css" /-->
+    <style>
+      :root {
+        --font-family: sans-serif;
+
+        --color-primary: hsl(190, 97%, 38%);
+        --color-primary-focus: hsl(190, 97%, 30%);
+        --color-link: hsl(210, 66%, 52%);
+        --color-link-focus: hsl(210, 66%, 47%);
+        --color-background: hsl(0, 0%, 10%);
+        --color-gray-1: hsl(0, 0%, 85%);
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --color-primary: hsl(190, 97%, 30%);
+          --color-primary-focus: hsl(190, 97%, 38%);
+          --color-link: hsl(210, 66%, 47%);
+          --color-link-focus: hsl(210, 66%, 52%);
+          --color-background: hsl(0, 0%, 100%);
+          --color-gray-1: hsl(0, 0%, 15%);
+        }
+      }
+
+      body {
+        margin: 0 auto;
+        background-color: var(--color-background);
+        font-family: var(--font-family);
+        font-size: 1.1rem;
+        color: var(--color-gray-1);
+        line-height: 1.4;
+        max-width: 62.5rem;
+      }
+      a {
+        text-decoration: none;
+        color: var(--color-link);
+      }
+      a:focus,
+      a:hover {
+        color: var(--color-link-focus);
+      }
+      a:visited {
+        color: var(--color-primary);
+      }
+      a:visited:hover {
+        color: var(--color-primary-focus);
+      }
+      img {
+        max-width: 100%;
+      }
+    </style>
   </head>
   <body>
   <main>
-  
     {{ content | safe }}
-
-      <footer class="footer">
-        <div class="links">
-          <a href="/">Home</a>
-          <span class="divider">|</span>
-          <a href="/about">About</a>
-        </div>
-      </footer>
-    
   </main>
    
   </body>

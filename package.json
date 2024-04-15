@@ -7,7 +7,6 @@
     "build": "NODE_ENV=production eleventy"
   },
   "dependencies": {
-    "eleventy-plugin-seo": "0.5.2",
     "luxon": "^3.0.1"
   },
   "devDependencies": {
