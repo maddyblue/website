@@ -22,7 +22,7 @@ Previously:
 * [mz-sqlfmt](https://mz.sqlfum.pt/) sqlfmt for [Materialize](https://materialize.com/)
 * [acre](https://github.com/maddyblue/acre) LSP client for acme
 * [moggio](https://github.com/maddyblue/moggio) multi-source, multi-OS music player
-* [ct](https://ct.mattjibson.com) Cocktail tracker by ingredient
+* [ct](https://github.com/maddyblue/ct) Cocktail tracker by ingredient
 * [fittin.gs](https://github.com/maddyblue/fittin.gs) Eve Online fittings database (shut down)
 * [hots.dog](https://github.com/maddyblue/hots.dog/) Heroes of the Storm stats aggregator (shut down)
 * [go read](https://github.com/maddyblue/goread) Google Reader-like RSS reader (shut down)
