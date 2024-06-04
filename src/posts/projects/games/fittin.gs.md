@@ -3,7 +3,7 @@ title: "fittin.gs"
 date: 2019-11-25
 ---
 
-[fittin.gs](https://github.com/maddyblue/fittin.gs/) was a [EVE Online](https://heroesofthestorm.blizzard.com/en-us/) fit searcher.
+[fittin.gs](https://github.com/maddyblue/fittin.gs/) was an [EVE Online](https://www.eveonline.com/) fit searcher.
 
 It's a game where you build spaceships by fitting equipment to them, so we use the word fit or fitting when building a ship.
 Then you try to blow other spaceships up without blowing up yours.
