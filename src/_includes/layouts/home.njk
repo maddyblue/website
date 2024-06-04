@@ -4,8 +4,25 @@ templateClass: tmpl-home
 ---
 
 <div class="wrapper home">
+  <h2>{{title}}</h2>
   <div class="content">
     {{ content | safe }}
+
+    {%- for section_name, subsection in collections.sections -%}
+      <div>
+        <h3>{{ section_name }}</h3>
+        {%- for subsection_name, articles in subsection -%}
+          <div>
+            <i>{{ subsection_name }}</i>
+            <ul>
+            {%- for item in articles -%}
+              <li><a href="{{ item.url }}">{{ item.data.article }}</a></li>
+            {%- endfor -%}
+            </ul>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endfor -%}
     
     <ul style="list-style: none; padding: 0; margin: 0">
       {%- for post in collections.posts -%}

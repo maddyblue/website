@@ -1,9 +1,6 @@
 ---
 title: Great Piano Pieces
 date: 2012-12-20
-tags:
-  - posts
-layout: layouts/post.njk
 ---
 
 I have compiled some of my [favorite piano recordings](http://open.spotify.com/user/128346620/playlist/65QbOiGs3DuWa5I6a9MjXI) on spotify. (Sorry rdio folks, I tried to make an equivalent playlist, but rdio doesn't have some of the recordings I wanted and I couldn't find suitable replacements.) Below are some short program notes.

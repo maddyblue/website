@@ -2,9 +2,6 @@
 title: 'Bursera: a PostgreSQL red-green parser experiment'
 date: 2024-02-19
 eleventyExcludeFromCollections: true
-tags:
-  - posts
-layout: layouts/post.njk
 ---
 
 Here's some problems those of us in the PostgreSQL ecosystem have:
@@ -148,7 +145,6 @@ Select(
 Implementing this fully (at [Materialize](https://materialize.com/)) would take months of work. Even a partial implementation (say, only `SELECT` statements) is probably one dedicated month, so call it two to three months factoring in all the other stuff we do. Sadly the combined user benefit of the above problems is less than the benefit of 2-3 months of work on other projects, so this is unlikely to happen soon or ever.
 
 If I ever implement a parser from scratch in the future, I'm going to try out red-green from the start so that we can get LSP support, good errors, and comment-preserving pretty printing without a rewrite.
-
 
 #### Related work:
 

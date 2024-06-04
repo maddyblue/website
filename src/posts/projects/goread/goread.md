@@ -1,16 +1,13 @@
 ---
 title: "Go Read: Open-Source Google Reader Clone"
 date: 2013-06-26
-tags:
-  - posts
-layout: layouts/post.njk
 ---
 
-I would like to announce the release of [Go Read](http://www.goread.io). It as a Google Reader clone, and designed to be close to its simplicity and cleanliness. I wanted to build something as close to Google Reader as made sense for one person to build in a few months. Since the announcement, numerous clones have been written, and some existing ones were made known. I tried most of them and disliked them for various reasons. It seemed interesting and fun to make my own that would serve exactly my needs. I hope others find it useful.
+I would like to announce the release of [Go Read](https://github.com/maddyblue/goread). It as a Google Reader clone, and designed to be close to its simplicity and cleanliness. I wanted to build something as close to Google Reader as made sense for one person to build in a few months. Since the announcement, numerous clones have been written, and some existing ones were made known. I tried most of them and disliked them for various reasons. It seemed interesting and fun to make my own that would serve exactly my needs. I hope others find it useful.
 
-[Try it out:](http://www.goread.io)
+[Try it out:](https://github.com/maddyblue/goread)
 
-[<img style="width: 100%" src="https://cdn.glitch.global/08c0c16c-42ba-47bd-aa4b-fdab79602d49/goread-all.png?v=1669682052644">](http://www.goread.io/)
+[<img style="width: 100%" src="https://cdn.glitch.global/08c0c16c-42ba-47bd-aa4b-fdab79602d49/goread-all.png?v=1669682052644">](https://github.com/maddyblue/goread)
 
 Specifically, I wanted:
 

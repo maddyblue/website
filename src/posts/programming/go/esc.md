@@ -1,9 +1,6 @@
 ---
 title: "esc: Embedding Static Assets in Go"
 date: 2014-11-19
-tags:
-  - posts
-layout: layouts/post.njk
 ---
 
 With the release of [Bosun](http://bosun.org), I spent some time making

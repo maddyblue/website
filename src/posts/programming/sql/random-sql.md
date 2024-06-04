@@ -1,9 +1,6 @@
 ---
 title: "Testing CockroachDB: Generating Random (Valid) SQL"
 date: 2016-10-19
-tags:
-  - posts
-layout: layouts/post.njk
 ---
 
 _(Also published on the [Cockroach Labs Blog](https://www.cockroachlabs.com/blog/testing-random-valid-sql-in-cockroachdb/).)_

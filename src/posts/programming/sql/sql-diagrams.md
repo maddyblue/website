@@ -1,9 +1,6 @@
 ---
 title: "Efficient Documentation Using SQL Grammar Diagrams"
 date: 2016-03-16
-tags:
-  - posts
-layout: layouts/post.njk
 ---
 
 _(Also published on the [Cockroach Labs Blog](https://www.cockroachlabs.com/blog/efficient-documentation-using-sql-grammar-diagrams/).)_

@@ -1,9 +1,6 @@
 ---
 title: "Implementing moggio: a cross-platform, multi-source music player in Go"
 date: 2016-02-29
-tags:
-  - posts
-layout: layouts/post.njk
 ---
 
 Today I am announcing the release of [moggio 0.1.0](http://mogg.io/). moggio

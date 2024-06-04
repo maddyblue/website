@@ -1,9 +1,6 @@
 ---
 title: "Redis Over CockroachDB"
 date: 2016-02-03
-tags:
-  - posts
-layout: layouts/post.njk
 ---
 
 _(Also published on the [Cockroach Labs Blog](http://www.cockroachlabs.com/blog/could-cockroachdb-ever-replace-redis-a-free-fridays-experiment).)_

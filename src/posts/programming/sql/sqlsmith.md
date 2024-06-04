@@ -1,9 +1,6 @@
 ---
 title: 'SQLsmith: Randomized SQL Testing in CockroachDB'
 date: 2019-06-26
-tags:
-  - posts
-layout: layouts/post.njk
 ---
 
 Randomized testing is a way for programmers to automate the discovery of interesting test cases that would be difficult or overly time consuming to come up with by hand. CockroachDB uses randomized testing in many parts of its code. I [previously](/random-sql/) wrote about generating random, valid SQL. Since then we’ve added an improved SQL generator to our suite called SQLsmith, inspired by a C compiler tester called Csmith. It improves on the previous tool by generating type and column-aware SQL that usually passes semantic checking and tests the execution logic of the database. It has found over 40 new bugs in just a few months that the previous tool was unable to produce. Here I’ll discuss the evolution of our randomized SQL testing, how the new SQLsmith tool works, and some thoughts on the future of targeted randomized testing.

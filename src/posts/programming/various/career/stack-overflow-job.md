@@ -1,9 +1,6 @@
 ---
 title: "How I got a job at Stack Overflow"
 date: 2012-04-28
-tags:
-  - posts
-layout: layouts/post.njk
 ---
 
 I just got a job at [Stack Exchange](http://stackexchange.com/). The experience was interesting enough and I learned a few things that could be valuable to others.
