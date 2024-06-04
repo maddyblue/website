@@ -8,7 +8,7 @@ layout: layouts/post.njk
 
 With the release of [Bosun](http://bosun.org), I spent some time making
 the installation process pleasant. This included embedding static web
-assets directly into the go binary. I have done this before with [appstats](https://github.com/mjibson/appstats)
+assets directly into the go binary. I have done this before with [appstats](https://github.com/maddyblue/appstats)
 and [miniprofiler](https://github.com/miniprofiler/go), but wanted to see the current state of public offerings,
 and see if any fit my needs. I found three existing programs, but ended up
 writing my own.
@@ -24,7 +24,7 @@ I wanted a program that:
 5. is vendoring-friendly
 
 Vendoring-friendly means that when I run [godep](https://github.com/tools/godep) or
-[party](https://github.com/mjibson/party), the static embed file will not
+[party](https://github.com/maddyblue/party), the static embed file will not
 change. This means it must not have any third-party imports (since their
 import path will be rewritten during `goimports`, and thus different than
 what the tool itself produces), or a specifable location for the needed
@@ -65,7 +65,7 @@ I prefer to use, although it does have compelling benefits, like being able
 to specify needed directories in code instead of in scripts (like all other
 programs here).
 
-# [github.com/mjibson/esc](https://github.com/mjibson/esc)
+# [github.com/maddyblue/esc](https://github.com/maddyblue/esc)
 
 esc is the tool I have thus built to meet exactly these goals, and I believe
 it does so. It generates nice, gzipped strings, one per file. There is a

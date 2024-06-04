@@ -119,7 +119,7 @@ system, meaning it can be cross compiled without a C compiler from Linux.
 
 # Summary
 
-Mog is [open source on GitHub](https://github.com/mjibson/moggio). I use it
+Mog is [open source on GitHub](https://github.com/maddyblue/moggio). I use it
 everyday to play most of my music, and it does nearly everything I need it
 to. It's still got some stability issues and rough edges, but it does what
 it says on the box. If you're interested in contributing, some open problems

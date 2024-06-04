@@ -6,7 +6,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-[sqlfmt](https://sqlfum.pt) is an online SQL formatter. It is pronounced sequel fumpt. Its purpose is to beautifully format SQL statements. (It is also [available offline](https://github.com/mjibson/sqlfmt/releases/latest).) I built sqlfmt with my Cockroach Labs colleague Raphael "knz" Poss. Here I will describe how to use it and its features. In addition, I will argue for its need in light of the existing SQL formatters and describe its somewhat interesting implementation. As we are dealing with code formatting here, there is much opinion, and here I will discuss mine. If you do not heartily ascribe to automated, opinionated (i.e., few or no options) choices in your code formatters, sqlfmt is not for you. sqlfmt is for those who think it is better to have no choice in the SQL formatting than it is to format it by hand.
+[sqlfmt](https://sqlfum.pt) is an online SQL formatter. It is pronounced sequel fumpt. Its purpose is to beautifully format SQL statements. (It is also [available offline](https://github.com/maddyblue/sqlfmt/releases/latest).) I built sqlfmt with my Cockroach Labs colleague Raphael "knz" Poss. Here I will describe how to use it and its features. In addition, I will argue for its need in light of the existing SQL formatters and describe its somewhat interesting implementation. As we are dealing with code formatting here, there is much opinion, and here I will discuss mine. If you do not heartily ascribe to automated, opinionated (i.e., few or no options) choices in your code formatters, sqlfmt is not for you. sqlfmt is for those who think it is better to have no choice in the SQL formatting than it is to format it by hand.
 
 ## Justification
 
@@ -118,7 +118,7 @@ SELECT a
        OR d
 ```
 
-In addition to the website, a [binary release](https://github.com/mjibson/sqlfmt/releases/latest) is available. This can be made into a macro for whatever editor you are using. Run `sqlfmt --help` to see its options.
+In addition to the website, a [binary release](https://github.com/maddyblue/sqlfmt/releases/latest) is available. This can be made into a macro for whatever editor you are using. Run `sqlfmt --help` to see its options.
 
 ## Implementation
 

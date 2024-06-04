@@ -6,7 +6,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-[Go Read](http://goread.io) began life [one year ago](https://github.com/mjibson/goread/commit/55fd9885659977aa8298f89d91b11d860687a6b1). It began life the same day of the [Google Reader shutdown announcement](http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html). It was released to the public in late June of 2013, and has been profitable since the start. I have never run a business, and was surprised that Go Read was profitable. I assumed it was operating at a slight loss, especially those first few months.
+[Go Read](http://goread.io) began life [one year ago](https://github.com/maddyblue/goread/commit/55fd9885659977aa8298f89d91b11d860687a6b1). It began life the same day of the [Google Reader shutdown announcement](http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html). It was released to the public in late June of 2013, and has been profitable since the start. I have never run a business, and was surprised that Go Read was profitable. I assumed it was operating at a slight loss, especially those first few months.
 
 <img style="width: 100%" src="https://cdn.glitch.global/08c0c16c-42ba-47bd-aa4b-fdab79602d49/goread-2013-income.png?v=1669682085256">
 
@@ -14,7 +14,7 @@ For 2013, total subscription income was $7129 ($1188 per month). Total App Engin
 
 # increasing income
 
-Go Read is [free](https://github.com/mjibson/goread). Its servers are not. I had hoped that its costs would have been low enough for me to handle myself, but at hundreds of dollars per month, I quickly changed my mind. I tried many approaches that did not work until the current one that does.
+Go Read is [free](https://github.com/maddyblue/goread). Its servers are not. I had hoped that its costs would have been low enough for me to handle myself, but at hundreds of dollars per month, I quickly changed my mind. I tried many approaches that did not work until the current one that does.
 
 ## volunteer payments
 

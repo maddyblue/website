@@ -27,7 +27,7 @@ Feed readers are difficult.
 
 One of the biggest problems with the readers I tried over the last months was scalability. While on the front page of HN, they were slow and unusable. Many then ended up restricting their demo tier to something useless or took so long to import my feeds that I just forgot about them and never went back. I wanted to architect a reader whose scale would be limited only by how much I was willing to pay for servers. Newsblur's early tweets suggested that the database was the bottle neck - they could not simply add new machines because it was not designed to use them. I chose the [go](http://golang.org) runtime of [app engine](https://developers.google.com/appengine/) and attempted to design the data structures in a way that allowed concurrency. Depending on the traffic I get, we will see if I succeeded.
 
-The second big difficulty is the lack of standards compliance. Most feeds are formatted more-or-less correctly, but you must support three formats (RSS, RDF, Atom). The number of date formats we encountered is comical (so much so that I [started a blog](http://rssdateformats.tumblr.com/) to document them). At current count, there are [around 60](https://github.com/mjibson/goread/blob/0387db10bd9fd9ccd90d557fa30b6e494efa577a/goapp/utils.go#L129) date formats I've seen. There are others that are just not parsable:
+The second big difficulty is the lack of standards compliance. Most feeds are formatted more-or-less correctly, but you must support three formats (RSS, RDF, Atom). The number of date formats we encountered is comical (so much so that I [started a blog](http://rssdateformats.tumblr.com/) to document them). At current count, there are [around 60](https://github.com/maddyblue/goread/blob/0387db10bd9fd9ccd90d557fa30b6e494efa577a/goapp/utils.go#L129) date formats I've seen. There are others that are just not parsable:
 
 - [Wed, 18 2012](http://www.threewordphrase.com/rss.xml)
 - [Tue, 3 Febuary 2010 00:00:00 IST](http://www.airtightnetworks.com/fileadmin/rss/press_releases.xml)
@@ -36,7 +36,7 @@ The second big difficulty is the lack of standards compliance. Most feeds are fo
 
 To make it snappy and fast, [angularjs](http://angularjs.org/) is used. A single page is loaded, and all interaction is JSON. Background requests are made to save read stories, save options, fetch the needed story content. This allows us to render changes to the user even if the server takes a bit to process them - we need to wait for returns to change the UI. Angular's data binding is just pleasant. It feels fast.
 
-The entire source is [on github](https://github.com/mjibson/goread) under the ISC license. Some other readers are open source, but appeared quite difficult to actually install. Using app engine allows go read to be easily run by anyone else by basically changing a single line; instructions are in the repo. A few hundred feeds can be run under the app engine free quota (number of users is basically unimportant to datastore use).
+The entire source is [on github](https://github.com/maddyblue/goread) under the ISC license. Some other readers are open source, but appeared quite difficult to actually install. Using app engine allows go read to be easily run by anyone else by basically changing a single line; instructions are in the repo. A few hundred feeds can be run under the app engine free quota (number of users is basically unimportant to datastore use).
 
 ## future
 

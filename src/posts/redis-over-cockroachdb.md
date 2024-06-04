@@ -18,9 +18,9 @@ Redis, it appears to me, made some performance tradeoffs from the start: be fast
 
 ## Experimenting with Redis Over CockroachDB
 
-I have now been working on this [Redis over CockroachDB](https://github.com/mjibson/cockroach/tree/redis) implementation for a few weeks with satisfying results. Currently, it is compiled directly into the main CockroachDB binary and binds to its own port that acts like a Redis server. The README file documents the supported commands, which include most of the list, set, and key commands. Various features aren’t implemented yet (key expiration, pub/sub, other data types), but my plan is to continue work to implement these over time.  
+I have now been working on this [Redis over CockroachDB](https://github.com/maddyblue/cockroach/tree/redis) implementation for a few weeks with satisfying results. Currently, it is compiled directly into the main CockroachDB binary and binds to its own port that acts like a Redis server. The README file documents the supported commands, which include most of the list, set, and key commands. Various features aren’t implemented yet (key expiration, pub/sub, other data types), but my plan is to continue work to implement these over time.  
   
-In order to ensure correctness, the [tests](https://github.com/mjibson/cockroach/tree/redis/redis/testdata) are structured so they can be run against a real Redis server and this one. The tests don’t test all possible combinations of commands (for example I had a bug where the `rename` command would only work for string types), but being able to compare to a real Redis instance, including error messages and types, has made implementing new commands and types fairly straightforward.
+In order to ensure correctness, the [tests](https://github.com/maddyblue/cockroach/tree/redis/redis/testdata) are structured so they can be run against a real Redis server and this one. The tests don’t test all possible combinations of commands (for example I had a bug where the `rename` command would only work for string types), but being able to compare to a real Redis instance, including error messages and types, has made implementing new commands and types fairly straightforward.
 
 ## Performance and Implementation
 
@@ -34,10 +34,10 @@ Some other features will be difficult to do at all. CockroachDB now has no event
 
 ## Future Use: Could CockroachDB Ever Replace Redis?
 
-I am working on [Redis over CockroachDB](https://github.com/mjibson/cockroach/tree/redis) only as an experiment. For now, it looks as though Redis is pretty safely in a different performance tier. That outcome isn’t a big surprise, as one is a featured-full cache and the other a strongly consistent database. However, it will be interesting to see how CockroachDB’s performance improves relative to Redis over time.
+I am working on [Redis over CockroachDB](https://github.com/maddyblue/cockroach/tree/redis) only as an experiment. For now, it looks as though Redis is pretty safely in a different performance tier. That outcome isn’t a big surprise, as one is a featured-full cache and the other a strongly consistent database. However, it will be interesting to see how CockroachDB’s performance improves relative to Redis over time.
 
 My personal goal is to make this a viable drop-in replacement for low- to medium-load Redis servers, but this requires support for nearly all Redis commands at reasonable performance. If it can get there, I hope that CockroachDB’s reduction in admin time compared to managing a Redis cluster offers enough benefit to be useful. This would make it possible to use a single CockroachDB cluster as both a SQL and Redis backend.
 
 – – –
 
-GitHub: [https://github.com/mjibson/cockroach/tree/redis](https://github.com/mjibson/cockroach/tree/redis)
+GitHub: [https://github.com/maddyblue/cockroach/tree/redis](https://github.com/maddyblue/cockroach/tree/redis)
