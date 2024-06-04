@@ -2,7 +2,7 @@ name: 11ty build
 on: [push]
 jobs:
   build_deploy:
-   runs-on: self-hosted
+   runs-on: ubuntu-latest
    steps:
    - name: Checkout last commit of repository
      uses: actions/checkout@v3
