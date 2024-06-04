@@ -10,7 +10,7 @@ Previously:
 [Stack Overflow](https://stackoverflow.com/),
 [CoreOS](https://coreos.com/).
 
-* [matt.jibson@gmail.com](mailto:matt.jibson@gmail.com)
+* [github@maddy.blue](mailto:github@maddy.blue)
 * [github](https://github.com/maddyblue/)
 * <a rel="me" href="https://hachyderm.io/@maddyblue">mastodon</a>
 * [twitter](https://twitter.com/maddyblue)
