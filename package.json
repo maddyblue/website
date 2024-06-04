@@ -15,16 +15,5 @@
   "engines": {
     "node": "12"
   },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/vanilla-zest-vegetarian"
-  },
-  "glitch": {
-    "projectType": "generated_static"
-  },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+  "license": "MIT"
 }
