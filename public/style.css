@@ -1,0 +1,159 @@
+:root {
+  --color-bg: #160f19;
+  --color-text-main: #eeeeee;
+  --color-primary: #418cab;
+  --color-pre-bg: #282828;
+  --color-comment: #898989;
+
+  --wrapper-height: 85vh;
+  --image-max-width: 320px;
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Link styles */
+a {
+  color: var(--color-primary);
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Navigation grid */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #ffffff;
+}
+
+.footer a:link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: var(--color-text-main);
+  text-decoration: none;
+  border-style: none;
+}
+.footer a:hover {
+  background: var(--color-primary);
+}
+
+.footer .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+/* Page structure */
+body {
+  font-family: sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+}
+.wrapper {
+  min-height: var(--wrapper-height);
+  place-items: center;
+  margin: 3rem 2rem 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Typography */
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5 !important;
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2rem 0 0.8rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--color-text-main);
+}
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
+  font-size: 2rem;
+  display: inline-flex;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+ul > li,
+ol > li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul.no-bullet {
+  list-style-type: none;
+}
+pre {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.3rem;
+}
+
+/* Layout: Home */
+.home {
+  justify-content: left;
+}
+
+/* Post */
+.post {
+  place-items: normal;
+}
+.postTitle {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+.controls {
+  margin: 3rem 0 2rem;
+}
+
+pre,
+code {
+  background-color: var(--color-pre-bg);
+  tab-size: 4;
+}

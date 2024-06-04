@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+<div class="wrapper home">
+  <div class="content">
+    {{ content | safe }}
+    
+    <ul style="list-style: none;">
+      {%- for post in collections.posts -%}
+        <li>
+          <a href="{{ post.url }}"><span style="color: var(--color-text-main); font-size: 1.25rem;">{{ post.data.title }}</span></a>
+          <br/>
+          <span style="color: var(--color-comment);">{{ post.data.page.date | htmlDateString }}</span>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
