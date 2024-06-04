@@ -14,7 +14,7 @@ Previously:
 * [github](https://github.com/maddyblue/)
 * <a rel="me" href="https://hachyderm.io/@maddyblue">mastodon</a>
 * [twitter](https://twitter.com/maddyblue)
-* [resume](https://cdn.glitch.global/08c0c16c-42ba-47bd-aa4b-fdab79602d49/resume.pdf?v=1669681792756)
+* [resume](/public/resume.pdf)
 
 ### Projects
 
