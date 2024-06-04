@@ -1,21 +1,21 @@
 {
-    "subject":"acct:mjibson@hachyderm.io",
+    "subject":"acct:maddyblue@hachyderm.io",
     "aliases":
     [
-        "https://hachyderm.io/@mjibson",
-        "https://hachyderm.io/users/mjibson"
+        "https://hachyderm.io/@maddyblue",
+        "https://hachyderm.io/users/maddyblue"
     ],
     "links":
     [
         {
             "rel":"http://webfinger.net/rel/profile-page",
             "type":"text/html",
-            "href":"https://hachyderm.io/@mjibson"
+            "href":"https://hachyderm.io/@maddyblue"
         },
         {
             "rel":"self",
             "type":"application/activity+json",
-            "href":"https://hachyderm.io/users/mjibson"
+            "href":"https://hachyderm.io/users/maddyblue"
         },
         {
             "rel":"http://ostatus.org/schema/1.0/subscribe",
