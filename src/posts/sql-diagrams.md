@@ -36,6 +36,6 @@ As CockroachDB is a new project, many esoteric or difficult parts of the full SQ
 
 ## Summary
 
-These tools allow us to automatically generate all of the SQL diagrams in our documentation. We have a document describing the [full grammar](https://www.cockroachlabs.com/docs/sql-grammar.html), as well as smaller pages listing [single statements](https://www.cockroachlabs.com/docs/create-database.html). All diagrams link references to the full grammar, making it simple to explore. The code for this is in our [documentation repository](https://github.com/cockroachdb/docs/tree/gh-pages/generate). Now, anytime we modify the SQL grammar to add a new feature, all the diagrams can be regenerated with a single command.
+These tools allow us to automatically generate all of the SQL diagrams in our documentation. We have a document describing the [full grammar](https://www.cockroachlabs.com/docs/sql-grammar.html), as well as smaller pages listing [single statements](https://www.cockroachlabs.com/docs/create-database.html). All diagrams link references to the full grammar, making it simple to explore. The code for this is in our [repository](https://github.com/cockroachdb/cockroach/blob/master/pkg/cmd/docgen/diagrams.go). Now, anytime we modify the SQL grammar to add a new feature, all the diagrams can be regenerated with a single command.
 
 <img src="https://cdn.glitch.global/08c0c16c-42ba-47bd-aa4b-fdab79602d49/drop_stmt.png?v=1669682190090">

@@ -1,0 +1,25 @@
+{
+    "subject":"acct:mjibson@hachyderm.io",
+    "aliases":
+    [
+        "https://hachyderm.io/@mjibson",
+        "https://hachyderm.io/users/mjibson"
+    ],
+    "links":
+    [
+        {
+            "rel":"http://webfinger.net/rel/profile-page",
+            "type":"text/html",
+            "href":"https://hachyderm.io/@mjibson"
+        },
+        {
+            "rel":"self",
+            "type":"application/activity+json",
+            "href":"https://hachyderm.io/users/mjibson"
+        },
+        {
+            "rel":"http://ostatus.org/schema/1.0/subscribe",
+            "template":"https://hachyderm.io/authorize_interaction?uri={uri}"
+        }
+    ]
+}

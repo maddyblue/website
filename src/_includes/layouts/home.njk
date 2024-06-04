@@ -7,14 +7,17 @@ templateClass: tmpl-home
   <div class="content">
     {{ content | safe }}
     
-    <ul style="list-style: none;">
+    <ul style="list-style: none; padding: 0; margin: 0">
       {%- for post in collections.posts -%}
         <li>
-          <a href="{{ post.url }}"><span style="color: var(--color-text-main); font-size: 1.25rem;">{{ post.data.title }}</span></a>
-          <br/>
-          <span style="color: var(--color-comment);">{{ post.data.page.date | htmlDateString }}</span>
+          {{ post.data.page.date | htmlDateString }}
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
         </li>
       {%- endfor -%}
     </ul>
   </div>
+</div>
+
+<div style="display: hidden">
+  <a rel="me" href="https://hachyderm.io/@mjibson" style="display: none">mastodon</a>
 </div>
