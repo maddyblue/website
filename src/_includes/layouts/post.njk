@@ -8,10 +8,22 @@ permalink: "/{{page.fileSlug}}/"
   <h2>{{title}}</h2>
   {{ content | safe }}
 
+  {% if chipplayerjs %}
+    <p>
+      <a href="https://chipplayerjs.app/?play={{ chipplayerjs }}">[original audio]</a>
+    </p>
+  {% endif %}
+
+  {% if youtube %}
+    <p>
+      <a href="https://www.youtube.com/watch?v={{ youtube }}">[original audio]</a>
+    </p>
+  {% endif %}
+
   {% if lilypond %}
     <div>
       <a href="https://maddyblue.github.io/lilypond/{{ lilypond }}.pdf">[pdf]</a>
-      <a href="https://github.com/maddyblue/lilypond/blob/main/{{ lilypond }}.ly">[lilypond]</a>
+      <a href="https://github.com/maddyblue/lilypond/blob/main/{{ lilypond }}.ly">[lilypond source]</a>
     </div>
     <embed src="https://maddyblue.github.io/lilypond/{{ lilypond }}.pdf" width="100%" height="680" type="application/pdf">
   {% endif %}
