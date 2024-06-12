@@ -8,15 +8,21 @@ permalink: "/{{page.fileSlug}}/"
   <h2>{{title}}</h2>
   {{ content | safe }}
 
-  {% if chipplayerjs %}
+  {% if chiptune %}
     <p>
-      <a href="https://chipplayerjs.app/?play={{ chipplayerjs }}">[original audio]</a>
+      <a href="https://chiptune.app/?play={{ chiptune }}">[original audio]</a>
     </p>
   {% endif %}
 
   {% if youtube %}
     <p>
       <a href="https://www.youtube.com/watch?v={{ youtube }}">[original audio]</a>
+    </p>
+  {% endif %}
+
+  {% if opus %}
+    <p>
+      <audio controls src="/public/opus/{{ opus }}.opus">
     </p>
   {% endif %}
 
