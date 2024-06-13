@@ -22,7 +22,8 @@ permalink: "/{{page.fileSlug}}/"
 
   {% if opus %}
     <p>
-      <audio controls src="/public/opus/{{ opus }}.opus">
+      rendered audio:
+      <div><audio controls src="/public/opus/{{ opus }}.opus"></div>
     </p>
   {% endif %}
 
