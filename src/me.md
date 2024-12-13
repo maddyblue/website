@@ -3,8 +3,9 @@ title: "Maddy Blue"
 layout: layouts/post.njk
 ---
 
-Dev at [Materialize](https://materialize.com/).
+Dev at [Triton](https://triton.ai/).
 Previously:
+[Materialize](https://materialize.com/),
 [Cockroach Labs](https://www.cockroachlabs.com/),
 [Stack Overflow](https://stackoverflow.com/),
 [CoreOS](https://coreos.com/).
