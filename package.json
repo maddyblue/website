@@ -1,7 +1,7 @@
 {
   "name": "glitch-hello-eleventy",
   "version": "0.1.0",
-  "description": "Maddy Blue",
+  "description": "Madelynn Blue",
   "scripts": {
     "start": "eleventy --serve",
     "build": "NODE_ENV=production eleventy"
