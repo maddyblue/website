@@ -1,5 +1,5 @@
 ---
-title: "Maddy Blue"
+title: "Madelynn Blue"
 layout: layouts/post.njk
 ---
 
