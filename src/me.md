@@ -3,7 +3,7 @@ title: "Madelynn Blue"
 layout: layouts/post.njk
 ---
 
-Dev at [Triton](https://triton.ai/).
+Dev at [Temporal](https://temporal.io/)).
 Previously:
 [Materialize](https://materialize.com/),
 [Cockroach Labs](https://www.cockroachlabs.com/),
